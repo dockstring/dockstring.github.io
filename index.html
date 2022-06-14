@@ -115,16 +115,13 @@
       <h2 class="subtitle has-text-centered">
           <b>One-sentence summary:</b>
           our package automates and standardizes ligand preparation for
-          <a href="https://vina.scripps.edu/">Autodock Vina</a>
+          <a href="https://vina.scripps.edu/">AutoDock Vina</a>
           to make molecular docking easy, accessible, and reproducible.
       </h2>
-      <br/>
-      <br/>
 
       <h2 class="subtitle has-text-centered">
-        <img src="./static/images/package_figure.png" alt="description" width="900">
+        <img src="./static/images/package_figure.png" alt="schematic of dockstring" width="512">
       </h2>
-
     </div>
   </div>
 </section>
@@ -134,15 +131,34 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h2 class="title is-3 has-text-centered">Abstract (for machine learners)</h2>
-          <p>TODO.</p>
+          <h2 class="title is-3 has-text-centered">Abstract (for chemists)</h2>
+          <p>Molecular docking is widely used by chemists, but
+          not in the machine learning community.
+          This is partly because performing docking requires a lot of domain knowledge
+          in chemistry (and potentially access to proprietary software).
+          Our paper, dockstring, aims to simplify this process to make docking accessible to non-experts.
+          We have created a python package which automatically prepares ligands, docks them using AutoDock Vina,
+          and parses the results.
+          This allows docking to be performed from a SMILES string with just one line of code.
+          We use this package to create a dataset of docking scores, and several benchmarks
+          for machine learning algorithms.
+          </p>
         </div>
       </div>
 
       <div class="column">
         <div class="content">
-          <h2 class="title is-3 has-text-centered">Abstract (for chemists)</h2>
-          <p>TODO.</p>
+          <h2 class="title is-3 has-text-centered">Abstract (for ML/CS)</h2>
+          <p>Molecular docking is a widely successful method in
+          drug discovery that estimates a molecule's binding affinity to a protein:
+          a mechanism which underlies the activity of most drugs.
+          Docking normally requires significant domain knowledge to perform,
+          which is why we made a python package to perform docking automatically.
+          The result is a program which can reliably and reproducibly
+          dock molecules from just their SMILES string in a single line of python code.
+          We have used dockstring to create a dataset and to define several benchmarks
+          which are more challenging and realistic
+          than many current popular benchmarks (e.g. maximizing penalized logP or QED).
         </div>
       </div>
     </div>
